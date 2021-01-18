@@ -1,6 +1,6 @@
-#fw_license   = "byol"                                                       # Uncomment 1 fw_license to select VM-Series licensing mode
+fw_license   = "byol"                                                       # Uncomment 1 fw_license to select VM-Series licensing mode
 #fw_license   = "bundle1"
-fw_license    = "bundle2"
+#fw_license    = "bundle2"
 global_prefix = "vdms"
 
 location        = "eastus"        // commercial region  
