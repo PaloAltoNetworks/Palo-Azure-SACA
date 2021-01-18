@@ -6,7 +6,7 @@
 - Valid Azure Subscription 
 - Access to Azure Cloud Shell 
 - Valid VM-Series authcode (If using BYOL)
-- Panorama network 
+- Panorama network information (only if using the Panorama for bootstrapping)
 
 
 ## Setup and configuration of the Terraform code 
@@ -17,7 +17,7 @@ In the Azure portal, open Azure Cloud Shell and run the following in **BASH ONLY
 
 # Accept the VM-Series EULA for desired license type (BYOL, Bundle1, or Bundle2)
 # Select just one license type and Pan OS below 
-$ az vm image terms accept --urn paloaltonetworks:vmseries1:<byol><bundle1><bundle2>:10.0.1
+$ az vm image terms accept --urn paloaltonetworks:vmseries1:[byol][bundle1][<bundle2]:10.0.1
 
 # Download the terraform code from the repo
 $ git clone https://github.com/PaloAltoNetworks/Palo-Azure-SACA  
@@ -51,7 +51,7 @@ After uploading the code to Azure Shell, change to the directory Azure/azure_vdm
 
 It may take up to 15 minutes to build the infrastructure and for the firewalls to fully boot. One the build is complete, copy the output data generated and save for later use
 
-## Destroy Buold
+## Destroy Build
 
 To destroy the build, verify that you are in the **Azure/azure_vdms_dist** directory. Run **terraform destroy**. Review the , [number] to destroy. and enter **yes** to confirm. Once the destroy is complete, you will receive the following message **"Destroy complete! Resources: [number] destroyed. 
 
