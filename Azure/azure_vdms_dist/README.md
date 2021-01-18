@@ -36,7 +36,7 @@ Open the **terraform.tfvars** file.
 ##Deployment Options
 Please review each deployment options and only make changes for the ones that are applicable 
 
-  - **Licensing the firewall**. If you want the terraform build to license the firewalls once deployed for **byol** customer, from the **Azure/azure_vdms_dist/bootstrap_files/vmseries/license** directory. edit the authcode file and add your authocode on line 1. 
+  - **Licensing the firewall**. If you want the terraform build to license the firewalls once deployed for **byol** customer, from the **Azure/azure_vdms_dist/bootstrap_files/vmseries/license** directory. edit the authcode file and add your authcode on line 1. 
 
 If you do not enter an authcode, the firewalls will still deploy, but will require a license post-deployment to enable full functionality 
 
