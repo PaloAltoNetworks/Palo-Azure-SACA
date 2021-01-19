@@ -42,14 +42,13 @@ Open the **terraform.tfvars** file.
 - **Location**: Select the desired commerical or government region and uncommented if necessary to reflect the correct location/environment. 
 - **Pan OS**: In the VM-Series resource group variable section, please confirm that you have the correct Pan OS. The default is **"10.0.1"**. 
 
-##Deployment Options
+## Deployment Options
 Please review each deployment options and only make changes for the ones that are applicable 
 
   - **Licensing the firewall**. If you want the terraform build to license the firewalls once deployed for **byol** customer, from the **Azure/azure_vdms_dist/bootstrap_files/vmseries/license** directory. edit the authcode file and add your authcode on line 1. 
 
 If you do not enter an authcode, the firewalls will still deploy, but will require a license post-deployment to enable full functionality 
 
-  -**Panorama** 
 ## Deploy Build
 
 After uploading the code to Azure Shell, change to the directory Azure/azure_vdms_dist. Run **terraform init**  to initialize the code. Then run **terraform plan** to confirm what will be built. Take note of the number of resources being built. Then run **terraform apply** to begin the build process. You will have to enter a value of **yes** to start the build.
