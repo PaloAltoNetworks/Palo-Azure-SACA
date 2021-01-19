@@ -1,3 +1,12 @@
+</br>
+<p align="center">
+<img src="/images/azure saca architecture.png">
+</p>
+
+
+
+
+
 # Deploying an Azure Secure Cloud Computing Architecture (SCCA) with Palo Alto Networks  
 
 
