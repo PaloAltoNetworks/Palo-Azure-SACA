@@ -1,6 +1,6 @@
 </br>
 <p align="center">
-<img src="/images/azure saca architecture.png">
+<img src="https://github.com/PaloAltoNetworks/Palo-Azure-SACA/blob/main/Azure/azure_vdms_dist/images/Azure%20saca%20architecture.png?raw=true">
 </p>
 
 
