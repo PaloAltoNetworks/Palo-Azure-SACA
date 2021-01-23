@@ -29,7 +29,7 @@ In the Azure portal, open Azure Cloud Shell and run the following in **BASH ONLY
 $ az vm image terms accept --urn paloaltonetworks:vmseries1:<byol/bundle1/bundle2>:10.0.1
 
 # Download the terraform code from the repo
-$ git clone https://github.com/PaloAltoNetworks/Palo-Azure-SACA  
+$ git clone https://github.com/PaloAltoNetworks/Palo-Azure-SACA.git
 
 
 ## Configuration changes to Terraform 
