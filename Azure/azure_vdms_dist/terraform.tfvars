@@ -4,7 +4,7 @@ fw_license   = "byol"                                                       # Un
 global_prefix = "vdms"
 
 location        = "eastus"        // commercial region  
-//location      = "usgovvirgina"  // uncomment to deploy into government region    
+//location      = "usgovvirginia"  // uncomment to deploy into government region    
 //environment   = "usgovernment"  // uncomment to deploy into Azure Gov
 
 # -----------------------------------------------------------------------
