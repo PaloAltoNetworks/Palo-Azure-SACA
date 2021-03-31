@@ -4,7 +4,7 @@ variable location {
 
 variable environment {
   description = "Environment variable to use Azure Gov (value: usgovernment) or Azure commercial (value: null)"
-  default     = "usgovernment" 
+  default     = null 
 }
 
 variable global_prefix {
