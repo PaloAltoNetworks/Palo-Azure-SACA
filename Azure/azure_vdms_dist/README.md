@@ -19,7 +19,7 @@ Terraform creates two load balanced VM-Series firewalls deployed in a single VNE
 In the Azure Portal, open Azure Cloud Shell and run the following **BASH ONLY!**.
 ```
 # Accept VM-Series EULA for desired license type (BYOL, Bundle1, or Bundle2)
-$ az vm image terms accept --urn paloaltonetworks:vmseries1:<byol><bundle1><bundle2>:10.0.1
+$ az vm image terms accept --urn paloaltonetworks:vmseries-flex:<byol><bundle1><bundle2>:10.0.1
 
 # Download repo & change directories to the Terraform build
 $ git clone https://github.com/PaloAltoNetworks/Palo-Azure-SACA.git; cd Palo-Azure-SACA/Azure/azure_vdms_dist
