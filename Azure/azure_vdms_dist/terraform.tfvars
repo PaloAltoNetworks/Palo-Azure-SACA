@@ -1,11 +1,12 @@
-fw_license   = "byol"                                                       # Uncomment 1 fw_license to select VM-Series licensing mode
-#fw_license   = "bundle1"
-#fw_license    = "bundle2"
-global_prefix = "vdms"
+# fw_license   = "byol"                                                       # Uncomment 1 fw_license to select VM-Series licensing mode
+# fw_license   = "bundle1"
+# fw_license   = "bundle2"
 
-location        = "eastus"        // commercial region  
-//location      = "usgovvirgina"  // uncomment to deploy into government region    
-//environment   = "usgovernment"  // uncomment to deploy into Azure Gov
+# location      = "eastus"        // commercial region  
+# location      = "usgovvirgina"  // uncomment to deploy into government region    
+# environment   = "usgovernment"  // uncomment to deploy into Azure Gov
+
+global_prefix = "vdms"
 
 # -----------------------------------------------------------------------
 # VM-Series resource group variables
@@ -38,6 +39,3 @@ windows_ip              = "10.0.3.5"
 
 vm_username             = "paloalto"
 vm_password             = "Pal0Alt0@123"
-
-
-
