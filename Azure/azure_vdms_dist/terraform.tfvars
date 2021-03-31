@@ -11,7 +11,7 @@ global_prefix = "vdms"
 # -----------------------------------------------------------------------
 # VM-Series resource group variables
 fw_prefix               = "vmseries"                                         # Adds prefix name to all resources created in the firewall resource group
-fw_vm_count             = 1
+fw_vm_count             = 2
 fw_panos                = "10.0.1"
 fw_nsg_prefix           = "0.0.0.0/0"
 fw_internal_lb_ip       = "10.0.2.100"
