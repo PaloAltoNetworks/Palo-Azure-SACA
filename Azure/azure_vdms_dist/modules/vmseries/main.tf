@@ -90,7 +90,7 @@ resource "azurerm_network_interface" "nic0" {
     name                          = "ipconfig1"
     subnet_id                     = var.subnet_mgmt
     private_ip_address_allocation = "Dynamic"
-    public_ip_address_id          = var.nic0_public_ip ? element(concat(azurerm_public_ip.nic0.*.id, list("")), count.index) : ""
+    public_ip_address_id          = var.nic0_public_ip ? element(concat(azurerm_public_ip.nic0.*.id, tolist([""])), count.index) : ""
 
   }
 }
@@ -106,7 +106,7 @@ resource "azurerm_network_interface" "nic1" {
     name                                    = "ipconfig1"
     subnet_id                               = var.subnet_untrust
     private_ip_address_allocation           = "Dynamic"
-    public_ip_address_id                    = var.nic1_public_ip ? element(concat(azurerm_public_ip.nic1.*.id, list("")), count.index) : ""
+    public_ip_address_id                    = var.nic1_public_ip ? element(concat(azurerm_public_ip.nic1.*.id, tolist([""])), count.index) : ""
   }
 }
 
@@ -121,7 +121,7 @@ resource "azurerm_network_interface" "nic2" {
     name                                    = "ipconfig1"
     subnet_id                               = var.subnet_trust
     private_ip_address_allocation           = "Dynamic"
-    public_ip_address_id                    = var.nic2_public_ip ? element(concat(azurerm_public_ip.nic2.*.id, list("")), count.index) : ""
+    public_ip_address_id                    = var.nic2_public_ip ? element(concat(azurerm_public_ip.nic2.*.id, tolist([""])), count.index) : ""
   }
 }
 
